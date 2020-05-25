@@ -1,0 +1,51 @@
+Dependencies for Project 'GP 0_6', Target 'Target 1': (DO NOT MODIFY !)
+F (.\os\hardware\lpc1114\boot.s)(0x556B145E)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I "F:\Project Folder\GP 0_6\RTE"-I C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.3.0\Device\Include\LPC11xx-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514"--list .\listings\boot.lst --xref -o .\objects\boot.o --depend .\objects\boot.d)
+F (.\os\hardware\lpc1114\lpc1114.cpp)(0x556B21CA)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections-I "F:\Project Folder\GP 0_6\RTE"-I C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.3.0\Device\Include\LPC11xx-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DRAM_BASE="0x10000000" -DRAM_SIZE="0x1000" -DSTACK_SIZE="0x200" -DMAX_LIBRARY_NUMBER="16" -DBYTES_PER_SECTOR="512" -DSECTOR_PER_CLUSTER="2" -DNUMBER_OF_FATS="2"-o .\objects\lpc1114.o --omf_browse .\objects\lpc1114.crf --depend .\objects\lpc1114.d)
+I (os\hardware\lpc1114\../../system/system.h)(0x556B1B70)
+I (os\hardware\lpc1114\../../system/../types.h)(0x55697026)
+I (os\hardware\lpc1114\../../system/../devices/device.h)(0x556B07FA)
+I (os\hardware\lpc1114\../../system/../devices/gpio.h)(0x556B125A)
+I (os\hardware\lpc1114\../../system/../devices/uart.h)(0x5569790A)
+I (os\hardware\lpc1114\../../system/../devices/../process/process.h)(0x556B07F8)
+I (os\hardware\lpc1114\../../system/../filesys/filesys.h)(0x556AFE14)
+I (os\hardware\lpc1114\../../system/../memory/memory.h)(0x5569C89C)
+I (os\hardware\lpc1114\lpc1114.h)(0x556454D2)
+I (os\hardware\lpc1114\apb.h)(0x555D8C80)
+I (os\hardware\lpc1114\i2c.h)(0x556977AC)
+I (os\hardware\lpc1114\wdt.h)(0x556977B0)
+I (os\hardware\lpc1114\uart.h)(0x556977B4)
+I (os\hardware\lpc1114\ct16.h)(0x556977BA)
+I (os\hardware\lpc1114\ct32.h)(0x556977BE)
+I (os\hardware\lpc1114\adc.h)(0x556977C2)
+I (os\hardware\lpc1114\pmu.h)(0x556977C4)
+I (os\hardware\lpc1114\flash.h)(0x556977CA)
+I (os\hardware\lpc1114\spi.h)(0x556977CE)
+I (os\hardware\lpc1114\iocon.h)(0x556977D2)
+I (os\hardware\lpc1114\syscon.h)(0x556977D6)
+I (os\hardware\lpc1114\ahb.h)(0x556977DA)
+I (os\hardware\lpc1114\gpio.h)(0x556977DE)
+I (os\hardware\lpc1114\ppb.h)(0x556977E2)
+F (.\os\system\system.cpp)(0x556B1418)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections-I "F:\Project Folder\GP 0_6\RTE"-I C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.3.0\Device\Include\LPC11xx-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DRAM_BASE="0x10000000" -DRAM_SIZE="0x1000" -DSTACK_SIZE="0x200" -DMAX_LIBRARY_NUMBER="16" -DBYTES_PER_SECTOR="512" -DSECTOR_PER_CLUSTER="2" -DNUMBER_OF_FATS="2"-o .\objects\system.o --omf_browse .\objects\system.crf --depend .\objects\system.d)
+I (os\system\system.h)(0x556B1B70)
+I (os\system\../types.h)(0x55697026)
+I (os\system\../devices/device.h)(0x556B07FA)
+I (os\system\../devices/gpio.h)(0x556B125A)
+I (os\system\../devices/uart.h)(0x5569790A)
+I (os\system\../devices/../process/process.h)(0x556B07F8)
+I (os\system\../filesys/filesys.h)(0x556AFE14)
+I (os\system\../memory/memory.h)(0x5569C89C)
+F (.\os\devices\device.cpp)(0x556B0818)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections-I "F:\Project Folder\GP 0_6\RTE"-I C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.3.0\Device\Include\LPC11xx-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DRAM_BASE="0x10000000" -DRAM_SIZE="0x1000" -DSTACK_SIZE="0x200" -DMAX_LIBRARY_NUMBER="16" -DBYTES_PER_SECTOR="512" -DSECTOR_PER_CLUSTER="2" -DNUMBER_OF_FATS="2"-o .\objects\device.o --omf_browse .\objects\device.crf --depend .\objects\device.d)
+I (os\devices\device.h)(0x556B07FA)
+I (os\devices\../types.h)(0x55697026)
+I (os\devices\gpio.h)(0x556B125A)
+I (os\devices\uart.h)(0x5569790A)
+I (os\devices\../process/process.h)(0x556B07F8)
+F (.\os\process\process.cpp)(0x556B0818)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections-I "F:\Project Folder\GP 0_6\RTE"-I C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.3.0\Device\Include\LPC11xx-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DRAM_BASE="0x10000000" -DRAM_SIZE="0x1000" -DSTACK_SIZE="0x200" -DMAX_LIBRARY_NUMBER="16" -DBYTES_PER_SECTOR="512" -DSECTOR_PER_CLUSTER="2" -DNUMBER_OF_FATS="2"-o .\objects\process.o --omf_browse .\objects\process.crf --depend .\objects\process.d)
+I (os\process\process.h)(0x556B07F8)
+I (os\process\../types.h)(0x55697026)
+F (.\os\filesys\filesys.cpp)(0x556AE084)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections-I "F:\Project Folder\GP 0_6\RTE"-I C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.3.0\Device\Include\LPC11xx-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DRAM_BASE="0x10000000" -DRAM_SIZE="0x1000" -DSTACK_SIZE="0x200" -DMAX_LIBRARY_NUMBER="16" -DBYTES_PER_SECTOR="512" -DSECTOR_PER_CLUSTER="2" -DNUMBER_OF_FATS="2"-o .\objects\filesys.o --omf_browse .\objects\filesys.crf --depend .\objects\filesys.d)
+I (os\filesys\filesys.h)(0x556AFE14)
+I (os\filesys\../types.h)(0x55697026)
+F (.\os\memory\memory.cpp)(0x55699C04)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections-I "F:\Project Folder\GP 0_6\RTE"-I C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.3.0\Device\Include\LPC11xx-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DRAM_BASE="0x10000000" -DRAM_SIZE="0x1000" -DSTACK_SIZE="0x200" -DMAX_LIBRARY_NUMBER="16" -DBYTES_PER_SECTOR="512" -DSECTOR_PER_CLUSTER="2" -DNUMBER_OF_FATS="2"-o .\objects\memory.o --omf_browse .\objects\memory.crf --depend .\objects\memory.d)
+I (os\memory\memory.h)(0x5569C89C)
+I (os\memory\../types.h)(0x55697026)

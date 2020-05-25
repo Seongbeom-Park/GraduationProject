@@ -1,0 +1,64 @@
+#ifndef HARDWARE_LPC1114_IOCON_H
+#define HARDWARE_LPC1114_IOCON_H
+
+#include "../../types.h"
+
+typedef struct {
+	uint32_t	PIO2_6;
+	uint32_t	RESERVED0;
+	uint32_t	PIO2_0;
+	uint32_t	RESET_PIO0_0;
+	uint32_t	PIO0_1;
+	uint32_t	PIO1_8;
+	uint32_t	RESERVED1;
+	uint32_t	PIO0_2;
+	uint32_t	PIO2_7;
+	uint32_t	PIO2_8;
+	uint32_t	PIO2_1;
+	uint32_t	PIO0_3;
+	uint32_t	PIO0_4;
+	uint32_t	PIO0_5;
+	uint32_t	PIO1_9;
+	uint32_t	PIO3_4;
+	uint32_t	PIO2_4;
+	uint32_t	PIO2_5;
+	uint32_t	PIO3_5;
+	uint32_t	PIO0_6;
+	uint32_t	PIO0_7;
+	uint32_t	PIO2_9;
+	uint32_t	PIO2_10;
+	uint32_t	PIO2_2;
+	uint32_t	PIO0_8;
+	uint32_t	PIO0_9;
+	uint32_t	SWCLK_PIO0_10;
+	uint32_t	PIO1_10;
+	uint32_t	PIO2_11;
+	uint32_t	R_PIO0_11;
+	uint32_t	R_PIO1_0;
+	uint32_t	R_PIO1_1;
+	uint32_t	R_PIO1_2;
+	uint32_t	PIO3_0;
+	uint32_t	PIO3_1;
+	uint32_t	PIO2_3;
+	uint32_t	SWDIO_PIO1_3;
+	uint32_t	PIO1_4;
+	uint32_t	PIO1_11;
+	uint32_t	PIO3_2;
+	uint32_t	PIO1_5;
+	uint32_t	PIO1_6;
+	uint32_t	PIO1_7;
+	uint32_t	PIO3_3;
+	uint32_t	SCK_LOC;
+	uint32_t	DSR_LOC;
+	uint32_t	DCD_LOC;
+	uint32_t	RI_LOC;
+	uint32_t	CT16B0_CAP0_LOC;
+	uint32_t	SCK1_LOC;
+	uint32_t	MISO1_LOC;
+	uint32_t	MOSI_LOC;
+	uint32_t	CT32B0_CAP0_LOC;
+	uint32_t	RXD_LOC;
+	uint8_t		RESERVED2[0x4000-0xd8];
+} IOCON_Typedef;
+
+#endif

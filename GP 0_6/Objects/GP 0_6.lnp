@@ -1,0 +1,11 @@
+--cpu Cortex-M0
+".\objects\boot.o"
+".\objects\lpc1114.o"
+".\objects\system.o"
+".\objects\device.o"
+".\objects\process.o"
+".\objects\filesys.o"
+".\objects\memory.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x10000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\GP 0_6.map" -o ".\Objects\GP 0_6.axf"

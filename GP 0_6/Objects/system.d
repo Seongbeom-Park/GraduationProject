@@ -1,0 +1,9 @@
+.\objects\system.o: os\system\system.cpp
+.\objects\system.o: os\system\system.h
+.\objects\system.o: os\system\../types.h
+.\objects\system.o: os\system\../devices/device.h
+.\objects\system.o: os\system\../devices/gpio.h
+.\objects\system.o: os\system\../devices/uart.h
+.\objects\system.o: os\system\../devices/../process/process.h
+.\objects\system.o: os\system\../filesys/filesys.h
+.\objects\system.o: os\system\../memory/memory.h

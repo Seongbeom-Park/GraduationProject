@@ -1,0 +1,61 @@
+#ifndef HARDWARE_LPC1114_SYSCON_H
+#define HARDWARE_LPC1114_SYSCON_H
+
+#include "../../types.h"
+
+typedef struct {
+	uint32_t	SYSMEMREMAP;
+	uint32_t	PRESETCTRL;
+	uint32_t	SYSPLLCTRL;
+	uint32_t	SYSPLLSTAT;
+	uint32_t	RESERVED0[4];
+	uint32_t	SYSOSCCTRL;
+	uint32_t	WDTOSCCTRL;
+	uint32_t	IRCCTRL;
+	uint32_t	RESERVED1;
+	uint32_t	SYSRSTSTAT;
+	uint32_t	RESERVED2[3];
+	uint32_t	SYSPLLCLKSEL;
+	uint32_t	SYSPLLCLKUEN;
+	uint32_t	RESERVED3[10];
+	uint32_t	MAINCLKSEL;
+	uint32_t	MAINCLKUEN;
+	uint32_t	SYSAHBCLKDIV;
+	uint32_t	RESERVED4;
+	uint32_t	SYSAHBCLKCTRL;
+	uint32_t	RESERVED5[4];
+	uint32_t	SSP0CLKDIV;
+	uint32_t	UARTCLKDIV;
+	uint32_t	SSP1CLKDIV;
+	uint32_t	RESERVED6[12];
+	uint32_t	WDTCLKSEL;
+	uint32_t	WDTCLKUEN;
+	uint32_t	WDTCLKDIV;
+	uint32_t	RESERVED7;
+	uint32_t	CLKOUTCLKSEL;
+	uint32_t	CLKOUTUEN;
+	uint32_t	CLKOUTCLKDIV;
+	uint32_t	RESERVED8[5];
+	uint32_t	PIOPORCAP0;
+	uint32_t	PIOPORCAP1;
+	uint32_t	RESERVED9[18];
+	uint32_t	BODCTRL;
+	uint32_t	SYSTCKCAL;
+	uint32_t	RESERVED10[6];
+	uint32_t	IRQLATENCY;
+	uint32_t	NMISRC;
+	uint32_t	RESERVED11[34];
+	uint32_t	STARTAPRP0;
+	uint32_t	STARTERP0;
+	uint32_t	STARTRSRP0CLR;
+	uint32_t	STARTSRP0;
+	uint32_t	RESERVED12[8];
+	uint32_t	PDSLEEPCFG;
+	uint32_t	PDAWAKECFG;
+	uint32_t	PDRUNCFG;
+	uint32_t	RESERVED13[110];
+	uint32_t	DEVICE_ID;
+	uint8_t		RESERVED14[0x3C08];
+} SYSCON_Typedef;
+
+#endif

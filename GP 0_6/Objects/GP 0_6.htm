@@ -1,0 +1,189 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\GP 0_6.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\GP 0_6.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Wed Jun 10 00:36:27 2015
+<BR><P>
+<H3>Maximum Stack Usage =         96 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+boot &rArr; System::System() &rArr; FileManager::FileManager() &rArr; FileManager::init() &rArr; prepare(unsigned, unsigned)
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[4]">Reset_Handler</a> from boot.o(.text) referenced from boot.o(RESET)
+ <LI><a href="#[3]">test()</a> from system.o(i._Z4testv) referenced from system.o(i._ZN6System3runEv)
+ <LI><a href="#[2]">boot</a> from lpc1114.o(i.boot) referenced from boot.o(.text)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[a]"></a>__aeabi_memcpy4</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FileManager::init()
+</UL>
+
+<P><STRONG><a name="[1a]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[4]"></a>Reset_Handler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, boot.o(.text))
+
+<P><STRONG><a name="[5]"></a>func2int</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, boot.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::load(const char*, void(*)())
+</UL>
+
+<P><STRONG><a name="[6]"></a>execute</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, boot.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::exec(const char*)
+</UL>
+
+<P><STRONG><a name="[3]"></a>test()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, system.o(i._Z4testv))
+<BR>[Address Reference Count : 1]<UL><LI> system.o(i._ZN6System3runEv)
+</UL>
+<P><STRONG><a name="[9]"></a>erase(unsigned, unsigned)</STRONG> (Thumb, 32 bytes, Stack size 56 bytes, lpc1114.o(i._Z5erasejj))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = erase(unsigned, unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FileManager::init()
+</UL>
+
+<P><STRONG><a name="[15]"></a>strcmp(char*, char*)</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, system.o(i._Z6strcmpPcS_))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strcmp(char*, char*)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::exec(const char*)
+</UL>
+
+<P><STRONG><a name="[16]"></a>strcpy(char*, char*)</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, system.o(i._Z6strcpyPcS_))
+<BR><BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::load(const char*, void(*)())
+</UL>
+
+<P><STRONG><a name="[8]"></a>prepare(unsigned, unsigned)</STRONG> (Thumb, 28 bytes, Stack size 56 bytes, lpc1114.o(i._Z7preparejj))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = prepare(unsigned, unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FileManager::init()
+</UL>
+
+<P><STRONG><a name="[7]"></a>FileManager::init()</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lpc1114.o(i._ZN11FileManager4initEv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = FileManager::init() &rArr; prepare(unsigned, unsigned)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prepare(unsigned, unsigned)
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;erase(unsigned, unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FileManager::FileManager()
+</UL>
+
+<P><STRONG><a name="[b]"></a>FileManager::FileManager()</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, filesys.o(i._ZN11FileManagerC1Ev))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = FileManager::FileManager() &rArr; FileManager::init() &rArr; prepare(unsigned, unsigned)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FileManager::init()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::System()
+</UL>
+
+<P><STRONG><a name="[1b]"></a>FileManager::FileManager__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, filesys.o(i._ZN11FileManagerC1Ev), UNUSED)
+
+<P><STRONG><a name="[d]"></a>DeviceManager::init()</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, device.o(i._ZN13DeviceManager4initEv))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeviceManager::DeviceManager()
+</UL>
+
+<P><STRONG><a name="[c]"></a>DeviceManager::DeviceManager()</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, device.o(i._ZN13DeviceManagerC1Ev))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = DeviceManager::DeviceManager()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeviceManager::init()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::System()
+</UL>
+
+<P><STRONG><a name="[1c]"></a>DeviceManager::DeviceManager__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, device.o(i._ZN13DeviceManagerC1Ev), UNUSED)
+
+<P><STRONG><a name="[f]"></a>MemoryManager::init()</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, memory.o(i._ZN13MemoryManager4initEv))
+<BR><BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemoryManager::MemoryManager()
+</UL>
+
+<P><STRONG><a name="[e]"></a>MemoryManager::MemoryManager()</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, memory.o(i._ZN13MemoryManagerC1Ev))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = MemoryManager::MemoryManager()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemoryManager::init()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::System()
+</UL>
+
+<P><STRONG><a name="[1d]"></a>MemoryManager::MemoryManager__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, memory.o(i._ZN13MemoryManagerC1Ev), UNUSED)
+
+<P><STRONG><a name="[11]"></a>ProcessManager::init()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, process.o(i._ZN14ProcessManager4initEv))
+<BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessManager::ProcessManager()
+</UL>
+
+<P><STRONG><a name="[10]"></a>ProcessManager::ProcessManager()</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, process.o(i._ZN14ProcessManagerC1Ev))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = ProcessManager::ProcessManager()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessManager::init()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::System()
+</UL>
+
+<P><STRONG><a name="[1e]"></a>ProcessManager::ProcessManager__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, process.o(i._ZN14ProcessManagerC1Ev), UNUSED)
+
+<P><STRONG><a name="[12]"></a>System::run()</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, system.o(i._ZN6System3runEv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = System::run() &rArr; System::exec(const char*) &rArr; strcmp(char*, char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::load(const char*, void(*)())
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::exec(const char*)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;boot
+</UL>
+
+<P><STRONG><a name="[14]"></a>System::exec(const char*)</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, system.o(i._ZN6System4execEPKc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = System::exec(const char*) &rArr; strcmp(char*, char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp(char*, char*)
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;execute
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::run()
+</UL>
+
+<P><STRONG><a name="[13]"></a>System::load(const char*, void(*)())</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, system.o(i._ZN6System4loadEPKcPFvvE))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = System::load(const char*, void(*)())
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy(char*, char*)
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;func2int
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::run()
+</UL>
+
+<P><STRONG><a name="[19]"></a>System::shutdown()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, system.o(i._ZN6System8shutdownEv))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;boot
+</UL>
+
+<P><STRONG><a name="[17]"></a>System::System()</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, system.o(i._ZN6SystemC1Ev))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = System::System() &rArr; FileManager::FileManager() &rArr; FileManager::init() &rArr; prepare(unsigned, unsigned)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessManager::ProcessManager()
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemoryManager::MemoryManager()
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeviceManager::DeviceManager()
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FileManager::FileManager()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;boot
+</UL>
+
+<P><STRONG><a name="[1f]"></a>System::System__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, system.o(i._ZN6SystemC1Ev), UNUSED)
+
+<P><STRONG><a name="[18]"></a>System::operator new(unsigned)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lpc1114.o(i._ZN6SystemnwEj))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;boot
+</UL>
+
+<P><STRONG><a name="[2]"></a>boot</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, lpc1114.o(i.boot))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = boot &rArr; System::System() &rArr; FileManager::FileManager() &rArr; FileManager::init() &rArr; prepare(unsigned, unsigned)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::System()
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::shutdown()
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::run()
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::operator new(unsigned)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> boot.o(.text)
+</UL><P>
+<H3>
+Local Symbols
+</H3><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
