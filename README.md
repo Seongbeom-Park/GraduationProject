@@ -1,10 +1,3 @@
-# GraduationProject Backup
+# GraduationProject Backup Repository
 
-## GP 0_6
-
-OS related codes
-TODO: simple explanations
-
-## TODO
-
-TODO: upload schematic related files
+version 0.6
